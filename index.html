@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2Point0 V<span style='color:#e50914'>n</span>tures | Coming Soon</title>
+  <title><span style='color:#e50914'>2</span>Point<span style='color:#e50914'>0</span> <span style='color:black'>V<span style='color:#e50914'>n</span>tures</span> | Coming Soon</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -18,7 +18,7 @@
     }
 
     body {
-      background: url('6a5f9423f4d61bbf677e7d057c50713f.jpg') center center / cover no-repeat fixed;
+      background: url('cityscape-bg.jpg') center center / cover no-repeat fixed;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -44,37 +44,38 @@
       text-align: center;
       padding: 40px;
       border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .logo {
-      width: 150px;
-      margin-bottom: 30px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-
-    .highlighted {
-      color: black;
-    }
-
-    .highlighted span {
-      color: #e50914;
+      width: 200px;
+      margin-bottom: 20px;
+      border-radius: 0;
     }
 
     .tagline {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: 600;
       color: #ff3b3f;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
       text-transform: uppercase;
       letter-spacing: 1.5px;
     }
 
-    form {
+    .contact-form {
+      position: absolute;
+      bottom: 80px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .contact-form form {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -117,9 +118,6 @@
     }
 
     @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
       .tagline {
         font-size: 1rem;
       }
@@ -130,13 +128,14 @@
   <div class="overlay"></div>
   <div class="container">
     <img src="4.png" alt="2Point0 Vntures Logo" class="logo">
-    <h1>2Point0 <span class="highlighted">V<span>n</span>tures</span></h1>
     <p class="tagline">Own the Outcome</p>
-    <form action="mailto:info@2point0vntures.com" method="POST" enctype="text/plain">
-      <input type="email" name="email" placeholder="Enter your email to stay updated" required>
-      <button type="submit">Notify Me</button>
-    </form>
+    <div class="contact-form">
+      <form action="mailto:info@2point0vntures.com" method="POST" enctype="text/plain">
+        <input type="email" name="email" placeholder="Enter your email to stay updated" required>
+        <button type="submit">Notify Me</button>
+      </form>
+    </div>
   </div>
-  <footer>&copy; 2025 2Point0 <span class="highlighted">V<span>n</span>tures</span>. All rights reserved.</footer>
+  <footer>&copy; 2025 <span style="color:#e50914">2</span>Point<span style="color:#e50914">0</span> <span style="color:black">V<span style="color:#e50914">n</span>tures</span>. All rights reserved.</footer>
 </body>
 </html>
